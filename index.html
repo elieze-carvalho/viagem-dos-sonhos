@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Viagem dos Sonhos</title>
+
+   <link rel="icon" type="image/png" href="imagens/Viagem dos Sonhos.jpg">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  
+  <!-- CONEXÃO COM O SEU ARQUIVO DE ESTILOS (Adicione esta linha!) -->
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <div class="container py-4">
+    
+    <!-- Linha do Menu -->
+    <div class="row mb-4">
+      <div class="col-lg-12">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light rounded shadow-sm">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#destinos">Explorar Destinos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#sobre">Sobre</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Linha do Carrossel -->
+    <div class="row mb-5">
+      <div class="col-lg-12">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner rounded shadow">
+            <div class="carousel-item active">
+              <img src="imagens/Praia-Fernando-de-Noronha.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>"O Caribe Brasileiro!"</h5>
+                <p>"Onde o azul do mar encontra o azul do céu e o tempo desacelera."</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="imagens/Piscinas-Naturais-ou-Gales-de-Maragogi.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Quem você traria para mergulhar com esses peixinhos?</h5>
+                <p>"Águas cristalinas, tons de azul-turquesa, um verdadeiro paraíso. Bem-vindos às Galés de Maragogi!"</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="imagens/lencois-maranhenses.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Descubra a magia do Parque Nacional dos Lençóis Maranhenses.</h5>
+                <p>Um ecossistema único que combina dunas migratórias com lagoas sazonais formadas pelas águas da chuva. Um verdadeiro santuário da natureza no Nordeste brasileiro.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Linha para os Cards (4 colunas para fechar o grid de 12) -->
+        <!-- SEÇÃO DE DESTINOS: 2 LINHAS COM 3 CARDS EM CADA -->
+    <div class="row" id="destinos">
+      
+      <!-- Card 1 -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100 shadow-sm">
+          <img src="imagens/Praia-Fernando-de-Noronha.jpg"
+     class="card-img-top object-fit-cover"
+     alt="Fernando de Noronha"
+     style="height: 220px; cursor: pointer;"
+     data-bs-toggle="modal"
+     data-bs-target="#modalNoronha">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Fernando de Noronha</h5>
+            <p class="card-text flex-grow-1">O arquipélago de Fernando de Noronha é o principal santuário ecológico do Brasil e um dos destinos de praia mais cobiçados do mundo. Localizado em Pernambuco, a cerca de 545 km de Recife, o destino é famoso por abrigar a Baía do Sancho (eleita várias vezes a melhor praia do planeta), além de uma vida marinha riquíssima que inclui golfinhos-rotadores, tartarugas e tubarões.</p>
+           <!-- Repare que o data-bs-target aponta para o ID do modal que vamos criar abaixo -->
+            
+            
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100 shadow-sm">
+          <img src="imagens/Piscinas-Naturais-ou-Gales-de-Maragogi.jpg"
+                class="card-img-top object-fit-cover"
+                alt="Maragogi"
+                style="height: 220px; cursor: pointer;"
+                data-bs-toggle="modal"
+                data-bs-target="#modalMaragogi">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Maragogi</h5>
+            <p class="card-text flex-grow-1">Maragogi, localizada no litoral norte de Alagoas, é carinhosamente apelidada de o "Caribe Brasileiro". Situada bem no coração da Costa dos Corais — a maior área de proteção ambiental marinha do Brasil — a cidade atrai viajantes do mundo todo devido ao seu mar calmo, morninho, de tons azul-turquesa inacreditáveis e, claro, pelas suas famosas piscinas naturais formadas por imensas barreiras de recifes.</p>
+            <!-- Repare que o data-bs-target aponta para o ID do modal que vamos criar abaixo -->
+           
+            
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100 shadow-sm">
+          <img src="imagens/lencois-maranhenses.jpg"
+                class="card-img-top object-fit-cover"
+                alt="Fernando de Noronha"
+                style="height: 220px; cursor: pointer;"
+                data-bs-toggle="modal"
+                data-bs-target="#modalLencois">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Lençóis Maranhenses</h5>
+            <p class="card-text flex-grow-1">O Parque Nacional dos Lençóis Maranhenses — recentemente titulado como Patrimônio Natural da Humanidade pela UNESCO — é um dos cenários mais espetaculares e surreais do planeta. Localizado no litoral do Maranhão, o parque combina uma imensidão de dunas de areia branca e fina que se movem constantemente com milhares de lagoas sazonais de água doce, cristalina e incrivelmente mornas.</p>
+            <!-- Repare que o data-bs-target aponta para o ID do modal que vamos criar abaixo -->
+            
+            
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 (Início automático da segunda linha) -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100 shadow-sm">
+          <img src="imagens/Bora-Bora.jpg"
+                class="card-img-top object-fit-cover"
+                alt="Ilha Bora Bora"
+                style="height: 220px; cursor: pointer;"
+                data-bs-toggle="modal"
+                data-bs-target="#modalBoraBora">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Ilha Bora Bora</h5>
+            <p class="card-text flex-grow-1">Bora Bora é um verdadeiro paraíso tropical localizado na Polinésia Francesa, no coração do Oceano Pacífico. Cercada por uma lagoa de águas cristalinas em tons de azul e verde, a ilha encanta visitantes com suas praias de areia branca, recifes de corais e paisagens naturais deslumbrantes. É mundialmente famosa por seus luxuosos bangalôs construídos sobre as águas, proporcionando experiências únicas de hospedagem. Entre as principais atrações estão os passeios de barco, mergulho com peixes coloridos, observação de arraias e momentos de tranquilidade em meio à natureza.</p>
+            <!-- Repare que o data-bs-target aponta para o ID do modal que vamos criar abaixo -->
+            
+            
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100 shadow-sm">
+          <img src="imagens/Praia-de-Navagio-Zakynthos-Grecia.jpg"
+                class="card-img-top object-fit-cover"
+                alt="Navagio"
+                style="height: 220px; cursor: pointer;"
+                data-bs-toggle="modal"
+                data-bs-target="#modalNavagio">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Praia de Navagio (Grécia)</h5>
+            <p class="card-text flex-grow-1">A Praia de Navagio (também conhecida como Shipwreck Beach ou Praia do Naufrágio) é um dos cartões-postais mais famosos e fotografados de toda a Grécia. Localizada na costa noroeste da deslumbrante ilha de Zakynthos, no Mar Jônico, ela é mundialmente conhecida por suas falésias imponentes de calcário branco, águas em um tom azul-turquesa neon quase inacreditável e pela icônica carcaça enferrujada do navio MV Panagiotis, encalhado em suas areias desde 1980.</p>
+            <!-- Repare que o data-bs-target aponta para o ID do modal que vamos criar abaixo -->
+           
+            
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100 shadow-sm">
+          <img src="imagens/Ilhas-Maldivas.jpg"
+                class="card-img-top object-fit-cover"
+                alt="Ilhas Maldivas"
+                style="height: 220px; cursor: pointer;"
+                data-bs-toggle="modal"
+                data-bs-target="#modalMaldivas">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Ilhas Maldivas</h5>
+            <p class="card-text flex-grow-1">"Localizadas no Oceano Índico, as Ilhas Maldivas reúnem mais de mil ilhas coralinas repletas de uma rica biodiversidade marinha. Conhecido mundialmente pela exclusividade de seus resorts, bangalôs flutuantes e por ser um dos melhores pontos de mergulho do planeta, o arquipélago transforma qualquer viagem em uma experiência mágica e cinematográfica."</p>
+            <!-- Repare que o data-bs-target aponta para o ID do modal abaixo -->
+            
+            
+          </div>
+        </div>
+      </div>
+      
+    </div>
+        
+       <!-- MODAL FERNANDO DE NORONHA -->
+<div class="modal fade" id="modalNoronha" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Fernando de Noronha</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img src="imagens/Praia-Fernando-de-Noronha.jpg" class="img-fluid rounded mb-3">
+        <p>Um paraíso brasileiro de águas cristalinas, praias incríveis e rica vida marinha.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL MARAGOGI -->
+<div class="modal fade" id="modalMaragogi" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Maragogi</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img src="imagens/Piscinas-Naturais-ou-Gales-de-Maragogi.jpg" class="img-fluid rounded mb-3">
+        <p>Conheça as famosas piscinas naturais e as águas azul-turquesa do Caribe Brasileiro.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL LENÇÓIS MARANHENSES -->
+<div class="modal fade" id="modalLencois" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Lençóis Maranhenses</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img src="imagens/lencois-maranhenses.jpg" class="img-fluid rounded mb-3">
+        <p>Um cenário extraordinário de dunas brancas e lagoas de águas cristalinas.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL BORA BORA -->
+<div class="modal fade" id="modalBoraBora" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Ilha Bora Bora</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img src="imagens/Bora-Bora.jpg" class="img-fluid rounded mb-3">
+        <p>Descubra as lagoas azul-turquesa e os famosos bangalôs sobre as águas da Polinésia Francesa.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL NAVAGIO -->
+<div class="modal fade" id="modalNavagio" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Praia de Navagio - Grécia</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img src="imagens/Praia-de-Navagio-Zakynthos-Grecia.jpg" class="img-fluid rounded mb-3">
+        <p>Uma praia impressionante cercada por falésias e águas azul-turquesa.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- ===================================================
+       SEÇÃO SOBRE: OBJETIVO PRÁTICO (EXPANDIDA - 6 PARÁGRAFOS)
+       =================================================== -->
+  <div class="row mt-5 pt-4 border-top" id="sobre">
+    <div class="col-lg-10 mx-auto mb-5">
+      <div class="p-4 p-md-5 bg-light rounded shadow-sm">
+        <h2 class="fw-bold text-primary text-center mb-4">📍 Sobre o Projeto</h2>
+        
+        <!-- Parágrafos 1, 2 e 3: Introdução e Objetivos -->
+        <p class="text-muted">
+          O projeto <strong>Viagem dos Sonhos</strong> foi idealizado como Atividade Integradora para consolidar os aprendizados teóricos da disciplina de Desenvolvimento Front-End em sala de aula. A proposta combina uma vitrine visual de destinos turísticos nacionais e internacionais com uma experiência de navegação simples e intuitiva.
+        </p>
+        <p class="text-muted">
+          O foco principal do exercício consistiu na aplicação de boas práticas em arquitetura de informação, hierarquia visual e semântica HTML5. Cada destino foi organizado para despertar o interesse do visitante por meio de fotografias de destaque e descrições objetivas sobre as atrações locais.
+        </p>
+        <p class="text-muted mb-4">
+          Além da estética, o website foi planejado para funcionar em formato <em>one page</em> (página única), permitindo que o usuário explore os destaques no carrossel, navegue pelos cartões informativos e abra detalhes adicionais em janelas modais sem precisar recarregar a página.
+        </p>
+
+        <!-- Parágrafos 4, 5 e 6: Pilares Técnicos em 3 Colunas -->
+        <div class="row g-3 mt-2">
+          <div class="col-md-4">
+            <div class="p-3 bg-white rounded border h-100">
+              <h6 class="fw-bold text-dark">📱 Design Responsivo</h6>
+              <p class="text-muted small mb-0">
+                Estruturação baseada no sistema de grid flexível do Bootstrap 5, garantindo adaptação automática entre telas de smartphones, tablets e computadores desktop.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="p-3 bg-white rounded border h-100">
+              <h6 class="fw-bold text-dark">🧩 Componentes Interativos</h6>
+              <p class="text-muted small mb-0">
+                Integração coerente de barra de navegação recolhível, carrossel de imagens, cards alinhados e janelas modais para enriquecer a interatividade do usuário.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="p-3 bg-white rounded border h-100">
+              <h6 class="fw-bold text-dark">🎨 Estilização Customizada</h6>
+              <p class="text-muted small mb-0">
+                Uso de folha de estilos CSS externa para padronizar a altura das fotografias, aplicar cortes proporcionais e criar efeitos suaves de transição ao passar o mouse.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div> <!-- Fim da Seção Sobre -->
+
+    
+<!-- MODAL MALDIVAS -->
+<div class="modal fade" id="modalMaldivas" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Ilhas Maldivas</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img src="imagens/Ilhas-Maldivas.jpg" class="img-fluid rounded mb-3">
+        <p>Um destino paradisíaco com ilhas coralinas, resorts e águas cristalinas.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </div> <!-- Fim do Bloco de Destinos -->
+
+
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

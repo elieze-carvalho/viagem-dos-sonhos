@@ -1,0 +1,49 @@
+/* ===============================================
+    CONFIGURAÇÕES DO CARROCEL (FOTOS DOS DESTINOS)
+   =============================================== */
+
+.carousel img{
+    height: 500px;
+    object-fit: cover; /* ESSENCIAL: Faz o corte inteligente para padronizar o tamanho*/ 
+    
+}
+
+@media screen and (max-width: 768px){
+    .carousel img{
+        height: 300px;
+    }
+}
+    
+/* ===================================================
+   EFEITO PARA IMAGENS CLICÁVEIS DOS CARDS
+   =================================================== */
+.img-clicavel {
+    cursor: pointer; /* Transforma a seta do mouse na mãozinha de clique */
+    transition: opacity 0.2s ease-in-out; /* Deixa o efeito visual suave */
+}
+
+.img-clicavel:hover {
+    opacity: 0.9; /* Deixa a imagem levemente mais clara ao passar o mouse */
+}
+
+/* ===================================================
+   FUNDO DO SITE
+   =================================================== */
+body {
+    background: linear-gradient(135deg, #e0f7fa 0%, #b2ebf2 50%, #e1f5fe 100%);
+    min-height: 100vh;
+}
+
+/* ===================================================
+   MELHORA A LEITURA DOS TEXTOS NO CARROSSEL
+   =================================================== */
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.55); /* Fundo preto com 55% de transparência */
+    padding: 15px 25px; /* Espaçamento interno para o texto respirar */
+    border-radius: 12px; /* Cantos arredondados para combinar com o layout */
+}
+
+.carousel-caption h5 {
+    font-weight: 700; /* Deixa o título em negrito */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8); /* Sombra leve atrás das letras */
+}
